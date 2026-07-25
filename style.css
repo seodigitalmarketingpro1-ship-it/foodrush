@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL
+   RESET
 ========================= */
 
 * {
@@ -8,19 +8,31 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family:
+
+        Arial,
+        Helvetica,
+        sans-serif;
+
     background: #fffaf5;
+
     color: #202124;
+
 }
+
 
 a {
     text-decoration: none;
 }
+
 
 button {
     font-family: inherit;
@@ -32,36 +44,77 @@ button {
 ========================= */
 
 .header {
+
     width: 100%;
+
     padding: 18px 7%;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
-    background: #ffffff;
+
+    background: white;
+
     border-bottom: 1px solid #eeeeee;
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
+
 }
+
 
 .logo {
-    font-size: 24px;
+
+    font-size: 25px;
+
     font-weight: 800;
+
     color: #ff5200;
+
 }
+
+
+.location {
+
+    color: #555;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
 
 .instagram-btn {
+
     background: #ff5200;
+
     color: white;
-    padding: 12px 18px;
+
+    padding: 12px 20px;
+
     border-radius: 30px;
+
     font-size: 14px;
+
     font-weight: bold;
+
     transition: 0.3s;
+
 }
 
+
 .instagram-btn:hover {
-    transform: translateY(-2px);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px #ff520044;
+
 }
 
 
@@ -70,96 +123,269 @@ button {
 ========================= */
 
 .hero {
-    min-height: 570px;
+
+    min-height: 590px;
+
     padding: 70px 7%;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 50px;
-    background: linear-gradient(135deg, #fff8f2, #fff0e5);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #fff8f1,
+            #fff0e4
+        );
+
 }
+
 
 .hero-content {
-    max-width: 600px;
+
+    max-width: 650px;
+
 }
 
-.small-label {
+
+.trending-label {
+
     color: #ff5200;
+
+    font-size: 13px;
+
     font-weight: bold;
-    font-size: 14px;
+
     letter-spacing: 1px;
+
 }
+
 
 .hero h1 {
-    font-size: clamp(42px, 6vw, 75px);
+
+    font-size: clamp(
+        45px,
+        6vw,
+        78px
+    );
+
     line-height: 1.05;
-    margin: 18px 0;
+
+    margin: 20px 0;
+
 }
+
 
 .hero h1 span {
+
     color: #ff5200;
+
 }
+
 
 .hero p {
-    font-size: 18px;
+
     color: #666;
+
+    font-size: 18px;
+
     line-height: 1.6;
-    max-width: 500px;
-    margin-bottom: 30px;
-}
 
-.main-btn {
-    display: inline-block;
-    background: #ff5200;
-    color: white;
-    padding: 16px 28px;
-    border-radius: 35px;
-    font-weight: bold;
-    transition: 0.3s;
-}
+    max-width: 520px;
 
-.main-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px #ff520055;
+    margin-bottom: 28px;
+
 }
 
 
 /* =========================
-   HERO IMAGE
+   SEARCH
 ========================= */
 
-.hero-image {
-    position: relative;
-    max-width: 500px;
-    width: 100%;
-}
+.search-box {
 
-.hero-image img {
     width: 100%;
-    height: 430px;
-    object-fit: cover;
-    border-radius: 30px;
-    box-shadow: 0 20px 50px #00000022;
-}
 
-.floating-card {
-    position: absolute;
-    z-index: 2;
+    max-width: 600px;
+
     background: white;
-    padding: 13px 18px;
-    border-radius: 20px;
+
+    padding: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 10px 30px #00000014;
+
+}
+
+
+.search-box span {
+
+    font-size: 20px;
+
+    margin-left: 15px;
+
+}
+
+
+.search-box input {
+
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    padding: 14px 5px;
+
+    font-size: 15px;
+
+}
+
+
+.search-box button {
+
+    border: none;
+
+    background: #ff5200;
+
+    color: white;
+
+    padding: 13px 23px;
+
+    border-radius: 30px;
+
     font-weight: bold;
-    box-shadow: 0 8px 25px #00000020;
+
+    cursor: pointer;
+
 }
 
-.card-one {
-    top: 30px;
+
+/* =========================
+   POPULAR SEARCH
+========================= */
+
+.popular-searches {
+
+    margin-top: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.popular-searches span {
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.popular-searches button {
+
+    border: none;
+
+    background: transparent;
+
+    color: #555;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   HERO FOOD IMAGE
+========================= */
+
+.hero-food {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    position: relative;
+
+}
+
+
+.hero-food img {
+
+    width: 100%;
+
+    height: 440px;
+
+    object-fit: cover;
+
+    border-radius: 35px;
+
+    box-shadow:
+
+        0 25px 60px #00000025;
+
+}
+
+
+.floating-badge {
+
+    position: absolute;
+
+    z-index: 2;
+
+    background: white;
+
+    padding: 15px 20px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    box-shadow:
+
+        0 10px 30px #00000020;
+
+}
+
+
+.badge-top {
+
+    top: 35px;
+
     left: -30px;
+
 }
 
-.card-two {
+
+.badge-bottom {
+
     bottom: 35px;
+
     right: -25px;
+
 }
 
 
@@ -168,19 +394,32 @@ button {
 ========================= */
 
 .categories-section,
-.products-section {
+.food-section {
+
     padding: 75px 7%;
+
 }
 
-.section-title span {
+
+.section-heading span {
+
     color: #ff5200;
-    font-size: 14px;
+
+    font-size: 13px;
+
     font-weight: bold;
+
+    letter-spacing: 1px;
+
 }
 
-.section-title h2 {
+
+.section-heading h2 {
+
     font-size: 36px;
+
     margin-top: 8px;
+
 }
 
 
@@ -189,139 +428,412 @@ button {
 ========================= */
 
 .categories {
+
     display: flex;
-    gap: 15px;
+
+    gap: 18px;
+
     flex-wrap: wrap;
-    margin-top: 30px;
+
+    margin-top: 35px;
+
 }
+
 
 .category {
+
+    min-width: 110px;
+
+    padding: 18px 22px;
+
     border: none;
+
+    border-radius: 18px;
+
     background: white;
-    padding: 15px 22px;
-    border-radius: 30px;
+
     cursor: pointer;
-    font-weight: bold;
-    box-shadow: 0 5px 20px #0000000d;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    box-shadow:
+
+        0 7px 25px #0000000d;
+
     transition: 0.3s;
+
 }
 
+
 .category span {
-    margin-right: 5px;
+
+    font-size: 32px;
+
 }
+
+
+.category strong {
+
+    font-size: 13px;
+
+}
+
 
 .category:hover,
 .category.active {
+
     background: #ff5200;
+
     color: white;
+
+    transform: translateY(-5px);
+
 }
 
 
 /* =========================
-   PRODUCTS
+   HEADING ROW
 ========================= */
 
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin-top: 35px;
+.row-heading {
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
 }
 
-.product-card {
-    background: white;
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px #0000000d;
-    transition: 0.3s;
-}
 
-.product-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 35px #00000018;
-}
+.view-all {
 
-.product-image {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
+    border: none;
 
-.product-info {
-    padding: 20px;
-}
+    background: transparent;
 
-.product-category {
     color: #ff5200;
-    font-size: 12px;
+
     font-weight: bold;
-    text-transform: uppercase;
-}
 
-.product-info h3 {
-    font-size: 19px;
-    margin: 10px 0;
-}
+    cursor: pointer;
 
-.product-info p {
-    color: #777;
-    font-size: 14px;
-    line-height: 1.5;
-    min-height: 42px;
-}
+    font-size: 15px;
 
-.product-btn {
-    display: block;
-    text-align: center;
-    background: #ff5200;
-    color: white;
-    padding: 13px;
-    border-radius: 12px;
-    margin-top: 18px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.product-btn:hover {
-    background: #d94100;
 }
 
 
 /* =========================
-   INSTAGRAM CTA
+   FOOD CARDS
+========================= */
+
+.food-grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(
+            4,
+            1fr
+        );
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+}
+
+
+.food-card {
+
+    background: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+
+        0 8px 25px #0000000d;
+
+    transition: 0.3s;
+
+}
+
+
+.food-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+
+        0 18px 35px #00000018;
+
+}
+
+
+.food-image {
+
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+}
+
+
+.food-info {
+
+    padding: 18px;
+
+}
+
+
+.food-tag {
+
+    color: #ff5200;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+}
+
+
+.food-info h3 {
+
+    font-size: 19px;
+
+    margin: 8px 0;
+
+}
+
+
+.food-details {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin: 12px 0;
+
+}
+
+
+.rating {
+
+    color: #168a38;
+
+    font-weight: bold;
+
+}
+
+
+.order-btn {
+
+    width: 100%;
+
+    display: block;
+
+    text-align: center;
+
+    background: #ff5200;
+
+    color: white;
+
+    padding: 13px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.order-btn:hover {
+
+    background: #d94200;
+
+}
+
+
+/* =========================
+   OFFERS
+========================= */
+
+.offers-section {
+
+    margin: 30px 7% 80px;
+
+    padding: 60px;
+
+    border-radius: 30px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ff5200,
+            #ff8500
+        );
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+
+.offers-content {
+
+    max-width: 550px;
+
+}
+
+
+.offers-content span {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+.offers-content h2 {
+
+    font-size: 42px;
+
+    line-height: 1.1;
+
+    margin: 15px 0;
+
+}
+
+
+.offers-content p {
+
+    line-height: 1.6;
+
+    opacity: 0.9;
+
+    margin-bottom: 25px;
+
+}
+
+
+.offer-btn {
+
+    display: inline-block;
+
+    background: white;
+
+    color: #ff5200;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+}
+
+
+.offer-emoji {
+
+    font-size: 75px;
+
+    max-width: 400px;
+
+    line-height: 1.5;
+
+    transform: rotate(-8deg);
+
+}
+
+
+/* =========================
+   INSTAGRAM
 ========================= */
 
 .instagram-section {
-    margin: 30px 7% 80px;
-    border-radius: 30px;
+
+    margin: 0 7% 80px;
+
     padding: 70px 20px;
+
     text-align: center;
-    background: linear-gradient(135deg, #ff5200, #ff8a00);
+
+    border-radius: 30px;
+
+    background: #202124;
+
     color: white;
+
 }
+
 
 .instagram-icon {
+
     font-size: 50px;
+
 }
 
-.instagram-content h2 {
-    font-size: 38px;
+
+.instagram-section h2 {
+
+    font-size: 36px;
+
     margin: 15px 0;
+
 }
 
-.instagram-content p {
-    font-size: 17px;
-    opacity: 0.9;
+
+.instagram-section p {
+
+    color: #aaa;
+
     margin-bottom: 25px;
+
 }
+
 
 .instagram-large-btn {
+
     display: inline-block;
-    background: white;
-    color: #ff5200;
+
+    background: #ff5200;
+
+    color: white;
+
     padding: 15px 25px;
+
     border-radius: 30px;
+
     font-weight: bold;
+
 }
 
 
@@ -330,17 +842,28 @@ button {
 ========================= */
 
 .disclosure {
+
     padding: 30px 7%;
-    background: #fff1e8;
+
     text-align: center;
+
+    background: #fff1e8;
+
 }
 
+
 .disclosure p {
+
     max-width: 850px;
+
     margin: auto;
-    font-size: 13px;
-    line-height: 1.6;
+
     color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
 }
 
 
@@ -349,37 +872,64 @@ button {
 ========================= */
 
 .footer {
+
     text-align: center;
+
     padding: 45px 20px;
-    background: #202124;
+
+    background: #151515;
+
     color: white;
+
 }
+
 
 .footer-logo {
-    font-size: 22px;
+
+    font-size: 24px;
+
+    color: #ff6b22;
+
     font-weight: bold;
-    color: #ff7b38;
+
 }
+
 
 .footer p {
-    margin: 10px 0;
+
     color: #aaa;
+
+    margin: 10px 0;
+
 }
+
 
 .footer-links {
+
     display: flex;
+
     justify-content: center;
+
     gap: 25px;
-    margin: 20px 0;
+
+    margin: 22px 0;
+
 }
+
 
 .footer-links a {
+
     color: white;
+
     font-size: 14px;
+
 }
 
+
 .copyright {
+
     font-size: 12px;
+
 }
 
 
@@ -387,83 +937,212 @@ button {
    RESPONSIVE
 ========================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
+
 
     .hero {
+
         flex-direction: column;
+
         text-align: center;
+
     }
 
-    .hero-content {
-        max-width: 700px;
-    }
 
     .hero p {
+
         margin-left: auto;
+
         margin-right: auto;
+
     }
 
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+    .search-box {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .popular-searches {
+
+        justify-content: center;
+
+    }
+
+
+    .food-grid {
+
+        grid-template-columns:
+
+            repeat(
+                2,
+                1fr
+            );
+
     }
 
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+
 
     .header {
+
         padding: 15px 5%;
+
     }
 
-    .logo {
-        font-size: 20px;
+
+    .location {
+
+        display: none;
+
     }
+
 
     .instagram-btn {
-        padding: 10px 12px;
+
+        padding: 10px 13px;
+
         font-size: 12px;
+
     }
+
 
     .hero {
+
         padding: 55px 5%;
+
     }
+
 
     .hero h1 {
-        font-size: 44px;
+
+        font-size: 45px;
+
     }
 
-    .hero-image img {
+
+    .hero-food img {
+
         height: 330px;
+
     }
 
-    .card-one {
+
+    .badge-top {
+
         left: 10px;
+
     }
 
-    .card-two {
+
+    .badge-bottom {
+
         right: 10px;
+
     }
+
 
     .categories-section,
-    .products-section {
+    .food-section {
+
         padding: 55px 5%;
+
     }
 
-    .section-title h2 {
+
+    .section-heading h2 {
+
         font-size: 30px;
+
     }
 
-    .products-grid {
-        grid-template-columns: 1fr;
+
+    .categories {
+
+        gap: 10px;
+
     }
+
+
+    .category {
+
+        min-width: 90px;
+
+        padding: 14px 12px;
+
+    }
+
+
+    .food-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .row-heading {
+
+        align-items: start;
+
+        gap: 15px;
+
+    }
+
+
+    .offers-section {
+
+        margin: 20px 5% 60px;
+
+        padding: 40px 25px;
+
+        flex-direction: column;
+
+        align-items: start;
+
+        gap: 30px;
+
+    }
+
+
+    .offers-content h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .offer-emoji {
+
+        font-size: 50px;
+
+    }
+
 
     .instagram-section {
-        margin: 20px 5% 60px;
+
+        margin: 0 5% 60px;
+
     }
 
-    .instagram-content h2 {
+
+    .instagram-section h2 {
+
         font-size: 30px;
+
+    }
+
+
+    .search-box button {
+
+        padding: 12px 15px;
+
     }
 
 }
