@@ -1,0 +1,469 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf5;
+    color: #202124;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff5200;
+}
+
+.instagram-btn {
+    background: #ff5200;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.instagram-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 570px;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(135deg, #fff8f2, #fff0e5);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.small-label {
+    color: #ff5200;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 1.05;
+    margin: 18px 0;
+}
+
+.hero h1 span {
+    color: #ff5200;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    background: #ff5200;
+    color: white;
+    padding: 16px 28px;
+    border-radius: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px #ff520055;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px #00000022;
+}
+
+.floating-card {
+    position: absolute;
+    z-index: 2;
+    background: white;
+    padding: 13px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 8px 25px #00000020;
+}
+
+.card-one {
+    top: 30px;
+    left: -30px;
+}
+
+.card-two {
+    bottom: 35px;
+    right: -25px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.categories-section,
+.products-section {
+    padding: 75px 7%;
+}
+
+.section-title span {
+    color: #ff5200;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.category {
+    border: none;
+    background: white;
+    padding: 15px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 5px 20px #0000000d;
+    transition: 0.3s;
+}
+
+.category span {
+    margin-right: 5px;
+}
+
+.category:hover,
+.category.active {
+    background: #ff5200;
+    color: white;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px #0000000d;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px #00000018;
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-category {
+    color: #ff5200;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product-info h3 {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.product-info p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 42px;
+}
+
+.product-btn {
+    display: block;
+    text-align: center;
+    background: #ff5200;
+    color: white;
+    padding: 13px;
+    border-radius: 12px;
+    margin-top: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.product-btn:hover {
+    background: #d94100;
+}
+
+
+/* =========================
+   INSTAGRAM CTA
+========================= */
+
+.instagram-section {
+    margin: 30px 7% 80px;
+    border-radius: 30px;
+    padding: 70px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #ff5200, #ff8a00);
+    color: white;
+}
+
+.instagram-icon {
+    font-size: 50px;
+}
+
+.instagram-content h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.instagram-content p {
+    font-size: 17px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+.instagram-large-btn {
+    display: inline-block;
+    background: white;
+    color: #ff5200;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   DISCLOSURE
+========================= */
+
+.disclosure {
+    padding: 30px 7%;
+    background: #fff1e8;
+    text-align: center;
+}
+
+.disclosure p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 45px 20px;
+    background: #202124;
+    color: white;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff7b38;
+}
+
+.footer p {
+    margin: 10px 0;
+    color: #aaa;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .instagram-btn {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 55px 5%;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero-image img {
+        height: 330px;
+    }
+
+    .card-one {
+        left: 10px;
+    }
+
+    .card-two {
+        right: 10px;
+    }
+
+    .categories-section,
+    .products-section {
+        padding: 55px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .instagram-section {
+        margin: 20px 5% 60px;
+    }
+
+    .instagram-content h2 {
+        font-size: 30px;
+    }
+
+}

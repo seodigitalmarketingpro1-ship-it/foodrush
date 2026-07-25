@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Picks | Best Products & Deals</title>
+    <meta name="description" content="Discover trending products, best deals and useful products recommended by us.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span>🛍️</span> DailyPicks
+        </div>
+
+        <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+           target="_blank"
+           class="instagram-btn">
+            📸 Follow Instagram
+        </a>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <span class="small-label">🔥 TRENDING NOW</span>
+
+            <h1>
+                Discover Products<br>
+                You’ll <span>Love ❤️</span>
+            </h1>
+
+            <p>
+                Hand-picked products, trending finds and amazing deals
+                recommended for you.
+            </p>
+
+            <a href="#products" class="main-btn">
+                Explore Products →
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <div class="floating-card card-one">⭐ 4.5+ Rated</div>
+            <div class="floating-card card-two">🔥 Trending</div>
+
+            <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=900&q=80"
+                 alt="Trending Products">
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories-section">
+
+        <div class="section-title">
+            <span>Explore</span>
+            <h2>Shop by Category</h2>
+        </div>
+
+        <div class="categories">
+
+            <button class="category active" data-category="all">
+                <span>🔥</span>
+                All
+            </button>
+
+            <button class="category" data-category="baby">
+                <span>👶</span>
+                Baby
+            </button>
+
+            <button class="category" data-category="home">
+                <span>🏠</span>
+                Home
+            </button>
+
+            <button class="category" data-category="fashion">
+                <span>👕</span>
+                Fashion
+            </button>
+
+            <button class="category" data-category="electronics">
+                <span>🎧</span>
+                Electronics
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products -->
+    <section class="products-section" id="products">
+
+        <div class="section-title">
+            <span>🔥 Today's Picks</span>
+            <h2>Trending Products</h2>
+        </div>
+
+        <div class="products-grid" id="productsContainer">
+            <!-- Products loaded by JavaScript -->
+        </div>
+
+    </section>
+
+
+    <!-- Instagram CTA -->
+    <section class="instagram-section">
+
+        <div class="instagram-content">
+
+            <span class="instagram-icon">📸</span>
+
+            <h2>Follow Us on Instagram</h2>
+
+            <p>
+                Get daily product recommendations, trending finds
+                and amazing deals.
+            </p>
+
+            <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+               target="_blank"
+               class="instagram-large-btn">
+                Follow @YOUR_INSTAGRAM_USERNAME
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Affiliate Disclosure -->
+    <section class="disclosure">
+        <p>
+            <strong>Affiliate Disclosure:</strong>
+            Some links on this website are affiliate links. If you purchase
+            a product through our links, we may earn a small commission at
+            no extra cost to you.
+        </p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            🛍️ DailyPicks
+        </div>
+
+        <p>
+            Discover. Shop. Enjoy.
+        </p>
+
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+               target="_blank">
+                Instagram
+            </a>
+        </div>
+
+        <p class="copyright">
+            © 2026 DailyPicks. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
