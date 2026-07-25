@@ -1,95 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Daily Picks | Best Products & Deals</title>
-    <meta name="description" content="Discover trending products, best deals and useful products recommended by us.">
+    <title>FoodRush - Discover Delicious Food</title>
+
+    <meta name="description"
+        content="Discover trending food, restaurants, offers and delicious meals near you.">
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Header -->
+    <!-- HEADER -->
+
     <header class="header">
+
         <div class="logo">
-            <span>🛍️</span> DailyPicks
+            🍔 <span>FoodRush</span>
+        </div>
+
+        <div class="location">
+            📍 <span>Choose Location</span>
         </div>
 
         <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
-           target="_blank"
-           class="instagram-btn">
-            📸 Follow Instagram
+            target="_blank"
+            class="instagram-btn">
+
+            📸 Instagram
+
         </a>
+
     </header>
 
 
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
+
     <section class="hero">
 
         <div class="hero-content">
-            <span class="small-label">🔥 TRENDING NOW</span>
+
+            <span class="trending-label">
+                🔥 TRENDING FOOD DISCOVERIES
+            </span>
 
             <h1>
-                Discover Products<br>
-                You’ll <span>Love ❤️</span>
+                What are you<br>
+                <span>craving today?</span> 🍔
             </h1>
 
             <p>
-                Hand-picked products, trending finds and amazing deals
-                recommended for you.
+                Discover delicious food, trending restaurants
+                and amazing food deals near you.
             </p>
 
-            <a href="#products" class="main-btn">
-                Explore Products →
-            </a>
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for food or restaurants..."
+                >
+
+                <button onclick="searchFood()">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- POPULAR SEARCHES -->
+
+            <div class="popular-searches">
+
+                <span>Popular:</span>
+
+                <button onclick="quickSearch('Pizza')">
+                    🍕 Pizza
+                </button>
+
+                <button onclick="quickSearch('Burger')">
+                    🍔 Burger
+                </button>
+
+                <button onclick="quickSearch('Biryani')">
+                    🍛 Biryani
+                </button>
+
+                <button onclick="quickSearch('Dessert')">
+                    🍰 Dessert
+                </button>
+
+            </div>
+
         </div>
 
-        <div class="hero-image">
-            <div class="floating-card card-one">⭐ 4.5+ Rated</div>
-            <div class="floating-card card-two">🔥 Trending</div>
 
-            <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=900&q=80"
-                 alt="Trending Products">
+        <!-- HERO FOOD IMAGE -->
+
+        <div class="hero-food">
+
+            <div class="floating-badge badge-top">
+                ⭐ 4.8 Rated
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=85"
+                alt="Delicious Pizza"
+            >
+
+            <div class="floating-badge badge-bottom">
+                🔥 Trending Now
+            </div>
+
         </div>
 
     </section>
 
 
-    <!-- Categories -->
+    <!-- FOOD CATEGORIES -->
+
     <section class="categories-section">
 
-        <div class="section-title">
-            <span>Explore</span>
-            <h2>Shop by Category</h2>
+        <div class="section-heading">
+
+            <span>EXPLORE YOUR CRAVINGS</span>
+
+            <h2>
+                What are you in the mood for?
+            </h2>
+
         </div>
+
 
         <div class="categories">
 
-            <button class="category active" data-category="all">
-                <span>🔥</span>
-                All
+            <button
+                class="category active"
+                data-category="all"
+                onclick="filterFood('all', this)"
+            >
+
+                <span>🍽️</span>
+
+                <strong>All</strong>
+
             </button>
 
-            <button class="category" data-category="baby">
-                <span>👶</span>
-                Baby
+
+            <button
+                class="category"
+                data-category="pizza"
+                onclick="filterFood('pizza', this)"
+            >
+
+                <span>🍕</span>
+
+                <strong>Pizza</strong>
+
             </button>
 
-            <button class="category" data-category="home">
-                <span>🏠</span>
-                Home
+
+            <button
+                class="category"
+                data-category="burger"
+                onclick="filterFood('burger', this)"
+            >
+
+                <span>🍔</span>
+
+                <strong>Burgers</strong>
+
             </button>
 
-            <button class="category" data-category="fashion">
-                <span>👕</span>
-                Fashion
+
+            <button
+                class="category"
+                data-category="biryani"
+                onclick="filterFood('biryani', this)"
+            >
+
+                <span>🍛</span>
+
+                <strong>Biryani</strong>
+
             </button>
 
-            <button class="category" data-category="electronics">
-                <span>🎧</span>
-                Electronics
+
+            <button
+                class="category"
+                data-category="chinese"
+                onclick="filterFood('chinese', this)"
+            >
+
+                <span>🍜</span>
+
+                <strong>Chinese</strong>
+
+            </button>
+
+
+            <button
+                class="category"
+                data-category="chicken"
+                onclick="filterFood('chicken', this)"
+            >
+
+                <span>🍗</span>
+
+                <strong>Chicken</strong>
+
+            </button>
+
+
+            <button
+                class="category"
+                data-category="dessert"
+                onclick="filterFood('dessert', this)"
+            >
+
+                <span>🍰</span>
+
+                <strong>Desserts</strong>
+
             </button>
 
         </div>
@@ -97,79 +240,171 @@
     </section>
 
 
-    <!-- Products -->
-    <section class="products-section" id="products">
+    <!-- TRENDING FOOD -->
 
-        <div class="section-title">
-            <span>🔥 Today's Picks</span>
-            <h2>Trending Products</h2>
+    <section class="food-section" id="foodSection">
+
+        <div class="section-heading row-heading">
+
+            <div>
+
+                <span>🔥 DISCOVER WHAT'S HOT</span>
+
+                <h2>
+                    Trending Food Near You
+                </h2>
+
+            </div>
+
+            <button
+                class="view-all"
+                onclick="filterFood('all')"
+            >
+
+                View All →
+
+            </button>
+
         </div>
 
-        <div class="products-grid" id="productsContainer">
-            <!-- Products loaded by JavaScript -->
+
+        <div
+            class="food-grid"
+            id="foodContainer"
+        >
+
+            <!-- JavaScript food cards -->
+
         </div>
 
     </section>
 
 
-    <!-- Instagram CTA -->
-    <section class="instagram-section">
+    <!-- SPECIAL OFFERS -->
 
-        <div class="instagram-content">
+    <section class="offers-section">
 
-            <span class="instagram-icon">📸</span>
+        <div class="offers-content">
 
-            <h2>Follow Us on Instagram</h2>
+            <span>
+                🔥 LIMITED TIME FOOD DEALS
+            </span>
+
+            <h2>
+                Delicious deals<br>
+                you shouldn't miss!
+            </h2>
 
             <p>
-                Get daily product recommendations, trending finds
-                and amazing deals.
+                Discover popular food offers and amazing
+                deals from our recommended food partners.
             </p>
 
-            <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
-               target="_blank"
-               class="instagram-large-btn">
-                Follow @YOUR_INSTAGRAM_USERNAME
+            <a
+                href="#foodSection"
+                class="offer-btn"
+            >
+
+                Explore Deals →
+
             </a>
 
         </div>
 
+
+        <div class="offer-emoji">
+
+            🍕 🍔 🍗 🍰
+
+        </div>
+
     </section>
 
 
-    <!-- Affiliate Disclosure -->
-    <section class="disclosure">
+    <!-- INSTAGRAM CTA -->
+
+    <section class="instagram-section">
+
+        <div class="instagram-icon">
+            📸
+        </div>
+
+        <h2>
+            Follow Us for Daily Food Discoveries
+        </h2>
+
         <p>
-            <strong>Affiliate Disclosure:</strong>
-            Some links on this website are affiliate links. If you purchase
-            a product through our links, we may earn a small commission at
-            no extra cost to you.
+            New food recommendations, trending dishes
+            and delicious deals every day.
         </p>
+
+        <a
+            href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+            target="_blank"
+            class="instagram-large-btn"
+        >
+
+            Follow @YOUR_INSTAGRAM_USERNAME
+
+        </a>
+
     </section>
 
 
-    <!-- Footer -->
+    <!-- AFFILIATE DISCLOSURE -->
+
+    <section class="disclosure">
+
+        <p>
+
+            <strong>Affiliate Disclosure:</strong>
+
+            Some links on this website may be affiliate links.
+            We may earn a commission when you purchase through
+            our links, at no additional cost to you.
+
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
     <footer class="footer">
 
         <div class="footer-logo">
-            🛍️ DailyPicks
+            🍔 FoodRush
         </div>
 
         <p>
-            Discover. Shop. Enjoy.
+            Discover. Crave. Enjoy.
         </p>
 
         <div class="footer-links">
-            <a href="#">Home</a>
-            <a href="#products">Products</a>
-            <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
-               target="_blank">
+
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#foodSection">
+                Food
+            </a>
+
+            <a href="#foodSection">
+                Deals
+            </a>
+
+            <a
+                href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+                target="_blank"
+            >
                 Instagram
             </a>
+
         </div>
 
         <p class="copyright">
-            © 2026 DailyPicks. All Rights Reserved.
+            © 2026 FoodRush. All Rights Reserved.
         </p>
 
     </footer>
@@ -178,4 +413,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
